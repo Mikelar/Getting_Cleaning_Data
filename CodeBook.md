@@ -42,8 +42,8 @@
 
 #####These are the ID VARIABLES:
 
-######Activity: each of the activity performed by every person
-######Subject each of the 30 volunteers
+######Activity: each of the activity performed by each person.
+######Subject: each of the 30 volunteers.
 
 #####This last variable is the average of each measurement for each activity and each subject:
 
