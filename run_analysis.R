@@ -27,6 +27,11 @@ headers <- c("Activity", headers)
 headers <- make.names(headers, unique = TRUE)
 colnames(union) <- headers
 
+##Install and load needed package.
+
+install.packages("dplyr")
+library(dplyr)
+
 ##Extract only the measurements on the mean and
 ##standard deviation for each measurement. 
 
@@ -50,12 +55,10 @@ subjects <- rbind(trainsubjects, testsubjects)
 colnames(subjects) <- "Subject"
 union2 <- cbind(subjects, union)
 
-##Install and load needed packages.
+##Install and load needed package.
 
 install.packages("reshape2")
 library(reshape2)
-install.packages("dplyr")
-library(dplyr)
 
 ##Create a new data set called "union2" with the average of
 ##each measurement for each activity and each subject.
