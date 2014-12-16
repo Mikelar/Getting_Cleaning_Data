@@ -1,0 +1,1 @@
+The description of how the script works is inside the script, marked with "##" step by step.
