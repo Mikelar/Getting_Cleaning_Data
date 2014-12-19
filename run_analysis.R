@@ -1,5 +1,5 @@
-##Assuming that the Samsung data is in the working directory,
-##unzip it.
+##Assuming that the Samsung data are in the working directory,
+##unzip them.
 
 unzip ("getdata-projectfiles-UCI HAR Dataset.zip")
 
