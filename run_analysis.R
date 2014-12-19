@@ -13,7 +13,7 @@ train <- read.table("UCI HAR Dataset/train/X_train.txt")
 trainlabels <- read.table("UCI HAR Dataset/train/y_train.txt")
 train <- cbind (trainlabels, train)
 
-# Merge the training and the test sets to create one data set called "union".
+## Merge the training and the test sets to create one data set called "union".
 
 union <- rbind(train, test)
 
@@ -32,7 +32,7 @@ colnames(union) <- headers
 install.packages("dplyr")
 library(dplyr)
 
-##Extract only the measurements on the mean and
+##Extract only the activity and the measurements on the mean and
 ##standard deviation for each measurement. 
 
 union <- select(union, Activity, contains("mean"), contains ("std"))
