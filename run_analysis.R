@@ -29,7 +29,7 @@ colnames(union) <- headers
 
 ##Install and load needed package.
 
-install.packages("dplyr")
+if("dplyr" %in% rownames(installed.packages()) == FALSE) {install.packages("dplyr")}
 library(dplyr)
 
 ##Extract only the activity and the measurements on the mean and
@@ -57,7 +57,7 @@ union2 <- cbind(subjects, union)
 
 ##Install and load needed package.
 
-install.packages("reshape2")
+if("reshape2" %in% rownames(installed.packages()) == FALSE) {install.packages("reshape2")}
 library(reshape2)
 
 ##Create a new data set called "union2" with the average of
